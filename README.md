@@ -1,4 +1,5 @@
 FROM python:3.8
+
 WORKDIR /home/serv/
 EXPOSE 8080
 COPY . /home/serv/serv.py
