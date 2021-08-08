@@ -1,6 +1,6 @@
-Simple Python Web Server
-========================
-
-This is the source code for howCode's simple Python Web Server.
-
-You can watch the video that accompanies this source code here: https://youtu.be/hFNZ6kdBgO0
+FROM python:3.8
+WORKDIR /home/serv/
+EXPOSE 8080
+COPY . /home/serv/serv.py
+ADD https://raw.githubusercontent.com/howCodeORG/Simple-Python-Web-Server/master/serv.py /home/serv/index.html
+CMD ["python3.8,"serv.py"]
