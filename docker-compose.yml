@@ -4,7 +4,7 @@ services:
 
   server:
         build: server/
-        command: python ./server.py
+        command: python ./serv.py
         ports:
           - 8080:8080
   curl:
