@@ -3,7 +3,7 @@ version: '3'
 services:
 
   server:
-        build: /home/server/
+        build: serv/
         command: python ./serv.py
         ports:
           - 8080:8080
@@ -11,4 +11,4 @@ services:
           image: curlimages/curl
           command: http://server:8080
           depends_on:
-                  - server
+                  - serv
